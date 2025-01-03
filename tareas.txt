@@ -1,0 +1,8 @@
+Tareas a desarrollar para completar la versión 0.1 de la página
+
+- Estructurar una página principal para la web
+    - Darle CSS
+
+- Agregar sistema dinámico para desplazarnos entre los diferentes
+  recursos disponibles.
+        
