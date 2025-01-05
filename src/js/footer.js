@@ -1,4 +1,4 @@
-class NavbarComponent extends HTMLElement {
+class FooterComponent extends HTMLElement {
     constructor() {
         super()
         this.attachShadow({ mode: 'open' })
@@ -7,7 +7,7 @@ class NavbarComponent extends HTMLElement {
     connectedCallback() {
         fetch('../components/footer.html')
             .then(response => {
-                if (!response.ok) throw new Error(`Error al cargar la navbar: ${response.statusText}`)
+                if (!response.ok) throw new Error(`Error al cargar el footer: ${response.statusText}`)
                 return response.text()
             })
             .then(html => {
@@ -24,4 +24,4 @@ class NavbarComponent extends HTMLElement {
     }
 }
 
-customElements.define('codex-auxilium-footer', NavbarComponent)
+customElements.define('codex-auxilium-footer', FooterComponent)
