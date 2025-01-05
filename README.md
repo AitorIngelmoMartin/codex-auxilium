@@ -3,6 +3,7 @@ Repository used to host a web page that serves as daily support for programmers.
 
 Estructura del repositorio
 
+```plaintext
 project-root/
 │
 ├── src/                # Código fuente
