@@ -3,3 +3,13 @@ header {
     background-color: #f5101000;
     padding: 10px 0;
 }
+
+/* CSS usado para quitar el subrallado del link y que solo salga al poner el ratón encima */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    text-decoration: underline;
+    color: blue;
+}
