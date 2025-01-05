@@ -51,6 +51,7 @@ project-root/
 ├── README.md           # Documentación del proyecto
 ├── LICENSE             # Licencia del proyecto
 └── webpack.config.js   # Configuración de Webpack (si aplica)
+```
 
 ## Descripción de cada carpeta:
 src/ (Source): Contiene todo el código fuente del proyecto, incluyendo HTML, CSS, JavaScript, y recursos estáticos.
