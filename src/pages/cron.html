@@ -28,12 +28,33 @@
         <script type="module" src="../js/header.js"></script>
         <script type="module" src="../js/footer.js"></script>
 
-        <!-- Scripts propios -->
+        <!-- Dependencias externas-->
+
+            <!-- Para traducir expresiones cron a texto plano -->
+            <script src="https://unpkg.com/cronstrue@latest/dist/cronstrue.min.js" async></script>
+            <script src="https://unpkg.com/cronstrue@latest/locales/es.min.js" async></script>
+        
+            <!-- Scripts propios -->
+
 
     </head>
     <body>
         <codex-auxilium-header></codex-auxilium-header>
         <main>
+            <script>
+                window.onload = function () {
+                    // Usar cronstrue inmediatamente, ya está cargado
+                    const cronExpression = "0 12 * * MON";
+
+                    // Generar descripciones en distintos idiomas
+                    const descriptionEn = cronstrue.toString(cronExpression, { locale: "en" });
+                    const descriptionEs = cronstrue.toString(cronExpression, { locale: "es" });
+
+                    // Mostrar en la consola
+                    console.log("English:", descriptionEn); // "At 12:00 PM, only on Monday"
+                    console.log("Español:", descriptionEs); // "A las 12:00 PM, solo los lunes"
+                }
+            </script>
             <h2>Editor online de expresiones cron</h2>
             <section>
                 <input name="cronExpression" type="text" value="*/5 10-12 * * 1-5">
