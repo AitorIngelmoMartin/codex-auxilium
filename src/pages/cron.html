@@ -33,32 +33,14 @@
             <!-- Para traducir expresiones cron a texto plano -->
             <script src="https://unpkg.com/cronstrue@latest/dist/cronstrue.min.js" async></script>
             <script src="https://unpkg.com/cronstrue@latest/locales/es.min.js" async></script>
-        
-            <!-- Scripts propios -->
-
-
     </head>
     <body>
         <codex-auxilium-header></codex-auxilium-header>
         <main>
-            <script>
-                window.onload = function () {
-                    // Usar cronstrue inmediatamente, ya está cargado
-                    const cronExpression = "0 12 * * MON";
-
-                    // Generar descripciones en distintos idiomas
-                    const descriptionEn = cronstrue.toString(cronExpression, { locale: "en" });
-                    const descriptionEs = cronstrue.toString(cronExpression, { locale: "es" });
-
-                    // Mostrar en la consola
-                    console.log("English:", descriptionEn); // "At 12:00 PM, only on Monday"
-                    console.log("Español:", descriptionEs); // "A las 12:00 PM, solo los lunes"
-                }
-            </script>
             <h2>Editor online de expresiones cron</h2>
             <section>
-                <input name="cronExpression" type="text" value="*/5 10-12 * * 1-5">
-                <span> *SALIDA* </span>
+                <input id="cron-expression-input" name="cron-expression-input" type="text" value="*/5 10-12 * * 1-5">
+                <span id="cron-expression-translation-span"> Every 5 minutes, between 10:00 AM and 12:59 PM, Monday through Friday </span>
             </section>
             <section>
                 <p>Próximas ejecuciones</p>
@@ -132,5 +114,7 @@
             </section>
         </main>
         <codex-auxilium-footer></codex-auxilium-footer>
+        <!-- Scripts propios -->
+        <script src="../js/cron_translator.js"></script>
     </body>
 </html>
