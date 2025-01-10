@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Variables comunes -->
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <link rel="icon" type="image/x-icon" href="../assests/icons/icono_temporal.ico">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+        <!-- Titulo de la página -->
+        <title>Codex Auxilium</title>
+
+        <!-- Etiqueta fundamental y que ocasionalmente sale como pequeño resumen de la web-->
+        <meta name="description" content="Página usada para disponer de recursos para programadores">
+        
+        <!-- OPEN GRAPH (se usa para das instrucciones que permitan compartir las webs como corresponde)-->
+        <meta property="og:title" content="Codex Auxilium">
+        <meta property="og:image" content="../assests/images/imagen_icono_temporal.jpg">
+        <meta property="og:image:alt" content="icono de la web">
+        <meta property="og:description" content="Página usada para disponer de recursos para programadores">
+
+        <!-- SEO -->
+        <link rel="alternate" href="url web en INGLES" hreflang="en-GB"> <!-- Nos permite indicar por ejemplo la web en otro idioma -->
+        <link rel="canonical" href="url de la web principal"> <!-- Podemos definir la URL por defecto. Hay que ponerlo SIN el www -->
+        
+        <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+        <!-- <script src='main.js'></script> -->
+
+        <!-- Web Components -->
+        <script type="module" src="../js/header.js"></script>
+        <script type="module" src="../js/footer.js"></script>
+
+    </head>
+    <body>
+        <codex-auxilium-header></codex-auxilium-header>
+        <main>
+            <p>Parrafo main</p>
+        </main>
+        <codex-auxilium-footer></codex-auxilium-footer>
+    </body>
+</html>
