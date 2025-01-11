@@ -13,44 +13,28 @@ project-root/
 │   │   └── icons/      # Íconos
 │   │
 │   ├── css/            # Archivos CSS
-│   │   ├── styles.css  # Estilos principales
-│   │   └── components/ # Estilos de componentes específicos
+│   │   ├── header.css  
+│   │   ├── footer.css  
+│   │   ├── footer.css
 │   │
 │   ├── js/             # Archivos JavaScript
-│   │   ├── main.js     # Archivo principal
-│   │   └── modules/    # Módulos JavaScript
+│   │   ├── header.js
+│   │   ├── footer.js
+│   │   ├── navbar.js
 │   │
-│   ├── components/     # Componentes reutilizables (HTML o JSX)
+│   ├── components/     # Componentes reutilizables HTML
 │   │   ├── header.html
 │   │   ├── footer.html
 │   │   └── navbar.html
 │   │
-│   ├── pages/          # Archivos HTML específicos de cada página
-│   │   ├── index.html  # Página principal
-│   │   ├── about.html  # Página "Acerca de"
-│   │   └── contact.html # Página de contacto
-│   │
 │   └── utils/          # Utilidades o funciones reutilizables
 │
-├── public/             # Archivos públicos (sirven como están)
-│   ├── robots.txt      # Indicaciones para motores de búsqueda
-│   ├── favicon.ico     # Icono del sitio web
-│   └── manifest.json   # Manifesto de la web (PWA)
-│
-├── dist/               # Archivos listos para producción (generados)
-│   ├── index.html      # Archivo HTML optimizado
-│   ├── styles.css      # Estilos optimizados
-│   └── main.js         # JavaScript optimizado
-│
-├── tests/              # Pruebas automatizadas
-│   ├── unit/           # Pruebas unitarias
-│   └── integration/    # Pruebas de integración
+├── index.html  # Página principal
+├── cron.html   # Página principal expresiones cron
 │
 ├── .gitignore          # Archivos y carpetas que Git debe ignorar
-├── package.json        # Dependencias y scripts del proyecto
 ├── README.md           # Documentación del proyecto
 ├── LICENSE             # Licencia del proyecto
-└── webpack.config.js   # Configuración de Webpack (si aplica)
 ```
 
 ## Descripción de cada carpeta:

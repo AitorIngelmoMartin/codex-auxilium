@@ -5,7 +5,7 @@ class NavbarComponent extends HTMLElement {
     }
 
     connectedCallback() {
-        fetch('../components/navbar.html')
+        fetch('src/components/navbar.html')
             .then(response => {
                 if (!response.ok) throw new Error(`Error al cargar la navbar: ${response.statusText}`)
                 return response.text()
@@ -13,7 +13,7 @@ class NavbarComponent extends HTMLElement {
             .then(html => {
                 const style = document.createElement('link')
                 style.rel = 'stylesheet'
-                style.href = '../styles/navbar.css'
+                style.href = 'src/styles/navbar.css'
 
                 const wrapper = document.createElement('div')
                 wrapper.innerHTML = html

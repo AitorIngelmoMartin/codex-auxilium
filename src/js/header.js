@@ -7,7 +7,7 @@ class HeaderComponent extends HTMLElement {
     }
 
     connectedCallback() {
-        fetch('../components/header.html')
+        fetch('src/components/header.html')
             .then(response => {
                 if (!response.ok) throw new Error(`Error al cargar el header: ${response.statusText}`)
                 return response.text()
@@ -15,7 +15,7 @@ class HeaderComponent extends HTMLElement {
             .then(html => {
                 const style = document.createElement('link')
                 style.rel = 'stylesheet'
-                style.href = '../styles/header.css'
+                style.href = 'src/styles/header.css'
 
                 const wrapper = document.createElement('div')
                 wrapper.innerHTML = html
