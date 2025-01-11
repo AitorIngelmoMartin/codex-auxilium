@@ -5,7 +5,7 @@ class FooterComponent extends HTMLElement {
     }
 
     connectedCallback() {
-        fetch('../components/footer.html')
+        fetch('src/components/footer.html')
             .then(response => {
                 if (!response.ok) throw new Error(`Error al cargar el footer: ${response.statusText}`)
                 return response.text()
@@ -13,7 +13,7 @@ class FooterComponent extends HTMLElement {
             .then(html => {
                 const style = document.createElement('link')
                 style.rel = 'stylesheet'
-                style.href = '../styles/footer.css'
+                style.href = 'src/styles/footer.css'
 
                 const wrapper = document.createElement('div')
                 wrapper.innerHTML = html
