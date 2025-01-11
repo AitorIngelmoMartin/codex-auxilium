@@ -15,7 +15,6 @@ cronExpressionInput.addEventListener('input', (event) => {
     }
 })
 
-
 // Script usado para comprobar que se ha importad obien la librería
 window.onload = function () {
     // Usar cronstrue inmediatamente, ya está cargado
