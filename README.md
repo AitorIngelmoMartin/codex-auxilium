@@ -38,10 +38,13 @@ project-root/
 ```
 
 ## Descripción de cada carpeta:
-src/ (Source): Contiene todo el código fuente del proyecto, incluyendo HTML, CSS, JavaScript, y recursos estáticos.
-assets/: Guarda imágenes, fuentes, y otros archivos estáticos.
-components/: Componentes reutilizables, como encabezados, pies de página o menús de navegación.
-pages/: Archivos HTML que representan las diferentes páginas del sitio.
-public/: Archivos que no necesitan procesamiento o compilación, como el favicon o robots.txt.
-dist/: Carpeta generada automáticamente después de compilar y optimizar el código para producción.
-tests/: Archivos de pruebas automatizadas para garantizar la calidad del código.
+
+- src/ (Source): Contiene todo el código fuente del proyecto, incluyendo HTML, CSS, JavaScript, y recursos estáticos.
+
+- assets/: Guarda imágenes, fuentes, y otros archivos estáticos.
+
+- components/: Componentes reutilizables, como encabezados, pies de página o menús de navegación.
+
+- css/: Contiene todos los ficheros .css del proyecto.
+
+- css/: Contiene todos los ficheros .js del proyecto.
